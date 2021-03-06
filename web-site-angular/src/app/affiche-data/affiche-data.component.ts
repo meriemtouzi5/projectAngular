@@ -8,6 +8,7 @@ import { PostService } from '../services/post.service';
 })
 export class AfficheDataComponent implements OnInit {
   posts: any;
+  errorin:any;
   constructor(private postService:PostService) { 
     
   }
@@ -20,6 +21,8 @@ export class AfficheDataComponent implements OnInit {
   this.postService.getPosts().subscribe(response =>
   {
     this.posts=response;
+  },error=>{
+    this.errorin="Error unittendue";
   })}
 
 }
