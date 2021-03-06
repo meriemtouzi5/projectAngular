@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { PostService } from '../services/post.service';
 
 @Component({
   selector: 'app-affiche-data',
@@ -8,16 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AfficheDataComponent implements OnInit {
   posts: any;
-  constructor(private http:HttpClient) { 
+  constructor(private postService:PostService) { 
     
   }
 
   ngOnInit(): void {
-    this.http.get("https://jsonplaceholder.typicode.com/posts").subscribe(response =>
-    {
-      this.posts=response;
-    })
+   this.getPosts();
     
   }
+  getPosts(){
+  this.postService.getPosts().subscribe(response =>
+  {
+    this.posts=response;
+  })}
 
 }
