@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "./app/app.component.css";
+@font-face {
+    font-family: ArchitectsDaughter;
+    src: url(assets/fonts/ArchitectsDaughter-Regular.ttf);
+  }
+  @font-face {
+    font-family: Lato-bold;
+    src: url(assets/fonts/Lato-Bold.ttf);
+  }

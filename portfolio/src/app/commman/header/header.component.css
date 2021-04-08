@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    margin-left: auto;
+}
+nav ul li{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+nav ul li a{
+    color: #000000;
+}
+small {
+    position: absolute;
+    top: -5px;
+    right: -15px;
+    font-size: 10px;
+}
+a.logo {
+    font-family: ArchitectsDaughter;
+    position: relative;
+    font-size: 23px;
+    line-height: 47px;
+    color: #000000;
+}
+.dark-icon{
+    width: 19px;
+    height: 19px;
+    margin-top: -4px;
+}
+li.active a {
+    font-weight: 500;
+    background-color: #c4c4c4;
+    padding: 3px 10px 6px;
+    border-radius: 20px;
+}

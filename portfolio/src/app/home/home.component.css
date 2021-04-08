@@ -1,0 +1,41 @@
+img {
+    width: 85%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.img-icon{
+    width: 23px;
+    height: 23px;
+    margin-left: 10px;
+}
+.title{
+    font-family: Lato-bold;
+    font-size: 47px;
+    line-height: 66px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.sub-title{
+    font-family: ArchitectsDaughter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 90px;
+    color: #000000;
+}
+.title-main{
+    font-family: Lato-bold;
+    font-size: 47px;
+    line-height: 55px;
+    letter-spacing: 0.03em;
+    color: #111111;
+}
+.link-btn{
+    font-family: ArchitectsDaughter;
+    font-size: 25px;
+    line-height: 44px;
+    color: #000000;
+}
+a{
+    text-decoration: none;
+}

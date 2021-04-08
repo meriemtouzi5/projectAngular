@@ -1,0 +1,14 @@
+<header>
+    <div class="container">
+        <nav>
+            <a class="logo"><span class="bg-gray">To</span>uzi Meriem<small>TM</small></a>
+            <ul>
+                <li class="active"><a routerLink="/home">Home</a></li>                
+                <li><a>Skills</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact</a></li>
+                <li (click)="changeMode()"><img [src]="darkMode?'assets/img/shine.png':'assets/img/moon.png'" class="dark-icon"></li>
+            </ul>
+        </nav>
+    </div>
+</header>
